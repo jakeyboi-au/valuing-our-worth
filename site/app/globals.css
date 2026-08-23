@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-libre-franklin), "Segoe UI", system-ui, sans-serif;
+  --font-heading: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-geist-mono), monospace;
+
+  /* Brand palette — extracted from the live site's compiled CSS. */
+  --color-ivory: #ffffff;
+  --color-ink: #1c1917;
+  --color-sand: #f0f7f4;
+  --color-linen: #faf9f5;
+  --color-sage: #52b788;
+  --color-sage-light: #74c69d;
+  --color-deep: #1b4332;
+  --color-stone: #57534e;
+  --color-forest: #2d6a4f;
+  --color-pebble: #a8a29e;
+  --color-warm: #c4956a;
+
+  --shadow-soft: 0 2px 20px rgba(45, 106, 79, 0.06);
+  --shadow-elevated: 0 20px 60px rgba(45, 106, 79, 0.1);
+}
+
+@layer utilities {
+  .section-pad {
+    padding-top: clamp(5rem, 8vw, 9rem);
+    padding-bottom: clamp(5rem, 8vw, 9rem);
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -100%;
+    left: calc(var(--spacing) * 4);
+    z-index: 1000;
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 2);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-deep);
+    background-color: var(--color-sage);
+    border-radius: 0.25rem;
+  }
+
+  .skip-link:focus {
+    top: calc(var(--spacing) * 4);
+  }
+}
