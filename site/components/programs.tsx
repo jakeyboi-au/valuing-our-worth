@@ -8,7 +8,7 @@ const programs = [
     tag: "Flagship Program",
     title: "Financially Fit Females",
     body: "A powerful group program where money becomes a source of empowerment, not stress. Through shared learning and community support, women discover that financial literacy is self-care and financial confidence is freedom.",
-    href: links.workshopOnline,
+    href: "#ready-to-rise",
     featured: true,
   },
   {
@@ -36,7 +36,7 @@ const programs = [
     tag: "Workshop",
     title: "Entrepreneurship Workshop",
     body: "Your launchpad. A powerful space for women ready to build self-trust, back their ideas, and start their business journey.",
-    href: links.workshopOnline,
+    href: "#ready-to-rise",
     featured: false,
   },
   {
@@ -88,8 +88,8 @@ export function Programs() {
             <RevealItem key={p.title}>
               <a
                 href={p.href}
-                target="_blank"
-                rel="noopener noreferrer"
+                target={p.href.startsWith("#") ? undefined : "_blank"}
+                rel={p.href.startsWith("#") ? undefined : "noopener noreferrer"}
                 className={`group flex h-full flex-col rounded-2xl border p-8 transition-all duration-500 hover:-translate-y-1 ${
                   p.featured
                     ? "border-sage/30 bg-deep text-sand hover:shadow-elevated"
