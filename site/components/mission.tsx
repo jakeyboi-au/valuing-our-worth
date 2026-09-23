@@ -3,14 +3,17 @@ import { Reveal } from "@/components/reveal";
 
 const pillars = [
   {
+    framework: "Reclaim Your Worth",
     title: "Rediscover Your Voice",
     body: "Find your courage and the joy of living fully aligned with who you really are.",
   },
   {
+    framework: "Build Your Wealth",
     title: "Build Financial Confidence",
     body: "Heal your relationship with money and break generational cycles of financial struggle.",
   },
   {
+    framework: "Lead Your Legacy",
     title: "Step Into Your Power",
     body: "Create freedom, abundance, and a legacy that lasts for generations.",
   },
@@ -42,6 +45,9 @@ export function Mission() {
                   <div className="flex gap-5">
                     <div className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-sage" />
                     <div>
+                      <p className="mb-1 text-[0.6875rem] font-semibold uppercase tracking-[0.15em] text-sage">
+                        {p.framework}
+                      </p>
                       <h3 className="mb-1 font-heading text-xl text-deep">{p.title}</h3>
                       <p className="text-[0.9375rem] leading-relaxed text-stone">{p.body}</p>
                     </div>
