@@ -5,25 +5,29 @@ const pillars = [
   {
     title: "Personal Empowerment",
     body: "Guiding women from self-doubt to self-worth with clarity and courage.",
-    image: "https://images.unsplash.com/photo-1556745757-8d76bdb6984b?w=800&q=80&auto=format",
+    image: "/images/community/personal-empowerment-hug.jpg",
+    alt: "Antonietta warmly embracing a client",
     shift: false,
   },
   {
     title: "Money Mindset",
     body: "Rewrite your money story, reclaim your worth, and own every room you walk into.",
-    image: "https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&q=80&auto=format",
+    image: "/images/community/money-mindset-hands-raised.jpg",
+    alt: "Antonietta and a group of women raising their hands together in celebration",
     shift: true,
   },
   {
     title: "Business & Leadership",
     body: "Empowering women to lead with confidence in business and life.",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80&auto=format",
+    image: "/images/community/business-leadership-presenting.jpg",
+    alt: "Antonietta presenting to a group of women",
     shift: false,
   },
   {
     title: "Community & Youth",
     body: "Connection, accountability, and school programs building the next generation of confident women.",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80&auto=format",
+    image: "/images/community/community-youth-sign.jpg",
+    alt: "Two young women standing beside the Valuing Our Worth sign",
     shift: true,
   },
 ];
@@ -49,7 +53,7 @@ export function Approach() {
                 <div className="relative mb-6 aspect-[3/4] overflow-hidden rounded-2xl">
                   <Image
                     src={p.image}
-                    alt={p.title}
+                    alt={p.alt}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
