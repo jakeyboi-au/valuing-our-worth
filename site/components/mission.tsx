@@ -53,10 +53,10 @@ export function Mission() {
 
           <Reveal delay={0.2} y={60}>
             <div className="relative">
-              <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
+              <div className="relative aspect-[1400/2172] overflow-hidden rounded-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1400&q=80&auto=format"
-                  alt="Women collaborating and supporting each other"
+                  src="/images/book/sovereign-woman-cover.jpg"
+                  alt="The Sovereign Woman: Reclaim Your Worth, Build Your Wealth, Lead Your Legacy — book by Antonietta Muraca"
                   fill
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 45vw"
